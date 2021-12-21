@@ -42,8 +42,15 @@ body {
   color: #ec9535;
 }
 
-.container .cigarette span i::after {
+.container .cigarette span i:first-child:after {
   content: 'L';
   color: #ccc;
   text-transform: lowercase;
+}
+
+.container .cigarette span i:last-child {
+  color: #f00;
+  filter: blur(2px);
+  text-shadow: -4px 0 2px #000, 8px 0 20px #f00, 8px 0 24px #f00, 8px 0 0 #222,
+    12px 0 #555, 16px 0 #666, 20px 0 #888, 24px 0 #999;
 }
